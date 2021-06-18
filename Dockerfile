@@ -43,8 +43,8 @@ RUN chmod +x /usr/local/bin/builder && builder && rm /usr/local/bin/builder
 RUN mkdir -p /app/data/baseset/ \
     && cd /app/data/baseset/ \
     && wget -q https://cdn.openttd.org/opengfx-releases/0.6.1/opengfx-0.6.1-all.zip \
-    && unzip opengfx-${OPENGFX_VERSION}-all.zip \
-    && tar -xf opengfx-${OPENGFX_VERSION}.tar \
+    && unzip opengfx-0.6.1-all.zip \
+    && tar -xf opengfx-0.6.1.tar \
     && rm -rf opengfx-*.tar opengfx-*.zip
 
 # END BUILD ENVIRONMENT
