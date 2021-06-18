@@ -42,7 +42,7 @@ RUN chmod +x /usr/local/bin/builder && builder && rm /usr/local/bin/builder
 ## Install OpenGFX
 RUN mkdir -p /app/data/baseset/ \
     && cd /app/data/baseset/ \
-    && wget -q https://cdn.openttd.org/opengfx-releases/${OPENGFX_VERSION}/opengfx-${OPENGFX_VERSION}-all.zip \
+    && wget -q https://cdn.openttd.org/opengfx-releases/0.6.1/opengfx-0.6.1-all.zip \
     && unzip opengfx-${OPENGFX_VERSION}-all.zip \
     && tar -xf opengfx-${OPENGFX_VERSION}.tar \
     && rm -rf opengfx-*.tar opengfx-*.zip
